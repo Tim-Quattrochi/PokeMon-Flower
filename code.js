@@ -85,7 +85,11 @@ class Pokemon {
 }
 
 let poke = new Pokemon();
+let poke1 = new Pokemon();
+
 poke.render();
+poke1.render();
+
 
 class Evee {
   constructor() {
@@ -140,5 +144,8 @@ class Evee {
 }
 
 let eevee = new Evee()
+let eevee1 = new Evee()
+
 
 eevee.render()
+eevee1.render()
