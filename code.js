@@ -26,14 +26,15 @@ class Flower {
   }
 
   clickImages = function () {
-    let counter = 0;
-
+    let counter = 1;
     let img = document.createElement("img");
     main.append(img);
-    img.src = this.images[0]
+    img.src = this.images[0];
     img.addEventListener(
       "click",
       function () {
+        console.log(this.images.length);
+
         if (counter < this.images.length) {
           img.setAttribute("src", `${this.images[counter]}`);
           counter++;
