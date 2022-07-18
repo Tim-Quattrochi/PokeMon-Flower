@@ -14,29 +14,25 @@ const toggleShake = function (element) {
 
 const main = document.querySelector("main");
 
-let flowerArray = [
-  "images/flower/flower0.png",
-  "images/flower/flower1.png",
-  "images/flower/flower2.png",
-];
-
 class Flower {
-  constructor(imageArray) {
-    this.images = imageArray;
+  constructor() {
+    this.flowerArray = [
+      "images/flower/flower0.png",
+      "images/flower/flower1.png",
+      "images/flower/flower2.png",
+    ];
   }
 
   clickImages = function () {
     let counter = 1;
     let img = document.createElement("img");
     main.append(img);
-    img.src = this.images[0];
+    img.src = this.flowerArray[0];
     img.addEventListener(
       "click",
       function () {
-        console.log(this.images.length);
-
-        if (counter < this.images.length) {
-          img.setAttribute("src", `${this.images[counter]}`);
+        if (counter < this.flowerArray.length) {
+          img.setAttribute("src", `${this.flowerArray[counter]}`);
           counter++;
         }
       }.bind(this)
@@ -44,10 +40,10 @@ class Flower {
   }.bind(this);
 }
 
-let flower = new Flower(flowerArray);
-let flower2 = new Flower(flowerArray);
-let flower3 = new Flower(flowerArray);
+let flower = new Flower();
+let flower2 = new Flower();
+let flower3 = new Flower();
 
-flower.clickImages(flowerArray);
-flower2.clickImages(flowerArray);
-flower3.clickImages(flowerArray);
+flower.clickImages();
+flower2.clickImages();
+flower3.clickImages();
