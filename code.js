@@ -1,5 +1,5 @@
-// This function is provided to shake an image.  Use it every time the user clicks on a pokemon.
-// Feel free to delete this function and include it as a method within your classes...
+
+
 
 const main = document.querySelector("main");
 
@@ -15,7 +15,8 @@ class Flower {
   clickImages = function () {
     let counter = 1;
     let img = document.createElement("img");
-    main.append(img);
+    let div = document.querySelector("#div-container")
+    div.append(img);
     img.src = this.flowerArray[0];
     img.addEventListener(
       "click",
@@ -90,7 +91,6 @@ let poke1 = new Pokemon();
 poke.render();
 poke1.render();
 
-
 class Evee {
   constructor() {
     this.evolution = [
@@ -101,7 +101,7 @@ class Evee {
       "images/eevee/eevee4.png",
       "images/eevee/eevee5.png",
       "images/eevee/eevee6.png",
-      "images/eevee/eevee7.png"
+      "images/eevee/eevee7.png",
     ];
   }
 
@@ -143,9 +143,8 @@ class Evee {
   };
 }
 
-let eevee = new Evee()
-let eevee1 = new Evee()
+let eevee = new Evee();
+let eevee1 = new Evee();
 
-
-eevee.render()
-eevee1.render()
+eevee.render();
+eevee1.render();
