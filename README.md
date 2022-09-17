@@ -1,6 +1,7 @@
 # Kenzie Academy JavaScript Assignment
 
-Complete your work inside of `code.js`
+This is one of the assessments I completed in term 1 at Kenzie academy for the full stack web devlopment program (MERN)
 
-Follow the instructions provided on my.kenzie.academy for this assignment.
-# PokeMon-Flower
+HTML
+CSS
+JavaScript
